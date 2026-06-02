@@ -43,6 +43,7 @@ Packages Used
 
 
 Features Implemented
+
 1.QR Code Generator
 * Generate QR codes from text or links
 * Save generated QR codes to history
