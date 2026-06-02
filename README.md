@@ -1,4 +1,5 @@
 QR Hub
+
 A modern Flutter application for generating, scanning, saving, and managing QR codes with a clean and user-friendly interface.
 
 
