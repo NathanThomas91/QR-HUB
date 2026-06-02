@@ -1,24 +1,63 @@
 QR Hub
-A modern Flutter application for generating, scanning, saving, and managing QR codes with a clean UI and smooth user experience.
+A modern Flutter application for generating, scanning, saving, and managing QR codes with a clean and user-friendly interface.
 
 
-Features
-1.QR Code Generation
+Project Overview
+QR Hub is a Flutter-based QR utility application that allows users to:
 * Generate QR codes from text or URLs
+* Scan QR codes using the device camera
+* Save generated and scanned QR records
+* Export and share QR codes
+* Manage QR history
+* Switch between Light and Dark themes
+* View exported QR images in a visual album
+The application was built with a focus on clean UI, smooth user experience, reusable widgets, and maintainable Flutter architecture.
+
+
+Setup Instructions
+1. Clone the Repository
+git clone https://github.com/NathanThomas91/QR-HUB.git
+
+2. Navigate to Project Folder
+cd QR-HUB
+
+3. Install Dependencies
+flutter pub get
+
+4. Run the Application
+flutter run
+
+
+Packages Used
+
+| Package            | Purpose                             |
+| ------------------ | ----------------------------------- |
+| provider           | State management for theme handling |
+| mobile_scanner     | QR code scanning using camera       |
+| qr_flutter         | QR code generation                  |
+| shared_preferences | Local data storage                  |
+| screenshot         | Capture QR code images              |
+| share_plus         | Share QR images/files               |
+| path_provider      | Access device storage paths         |
+
+
+Features Implemented
+1.QR Code Generator
+* Generate QR codes from text or links
 * Save generated QR codes to history
 * Export QR codes as images
 * Share QR codes directly
 
-2.QR Code Scanning
-* Real-time QR scanning using device camera
+2.QR Code Scanner
+* Real-time QR scanning
 * Automatic duplicate prevention
-* Instant scan result preview
-* Auto-save scanned codes to history
+* Auto-save scanned records
+* Animated success feedback
 
 3.History Management
-* View generated and scanned QR history
+* View scanned/generated QR history
 * Delete individual records
-* Clear entire history
+* Clear all history
 * Export history as CSV
 
 4.Theme Support
@@ -28,84 +67,15 @@ Features
 
 5.QR Album
 * Visual gallery for exported QR images
-* Preview saved QR images
+* Full image preview support
+
+6.UI/UX Features
+* Smooth animations
+* Reusable custom widgets
+* Empty state handling
+* Modern card-based UI
+* Responsive layouts
 
 
-Tech Stack
-* Flutter
-* Dart
-* Provider (State Management)
-* SharedPreferences (Local Storage)
-
-
-Packages Used
-mobile_scanner
-provider
-qr_flutter
-screenshot
-share_plus
-shared_preferences
-path_provider
-
-
-Project Structure
-lib/
-├── models/
-│   └── history_model.dart
-│
-├── screens/
-│   ├── splash_screen.dart
-│   ├── home_screen.dart
-│   ├── scanner_screen.dart
-│   ├── generate_qr_screen.dart
-│   └── history_screen.dart
-│
-├── services/
-│   └── storage_service.dart
-│
-├── utils/
-│   └── constants.dart
-│
-├── widgets/
-│   └── custom_button.dart
-│
-└── main.dart
-
-
-Installation
-1. Clone the repository
-git clone <your-repository-link>
-
-2. Navigate to project folder
-cd qr_code_app
-
-3. Install dependencies
-flutter pub get
-
-4. Run the app
-flutter run
-
-
-Future Improvements
-* Better local database support using Hive/Isar
-* QR customization (colors, logo embedding)
-* Search and filter history
-* Batch QR generation
-* Cloud sync support
-* Improved animation system
-
-
-Learning Outcomes
-This project helped in understanding:
-* Flutter widget architecture
-* State management using Provider
-* Local storage handling
-* File management
-* QR generation and scanning
-* UI/UX consistency
-* Animation handling
-* Reusable widget design
-
-
-Author
+# Author
 Nathan Thomas Chacko
